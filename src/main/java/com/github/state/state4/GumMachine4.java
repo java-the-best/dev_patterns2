@@ -1,4 +1,4 @@
-package com.github.state.state.state4;
+package com.github.state.state4;
 
 import java.util.Random;
 

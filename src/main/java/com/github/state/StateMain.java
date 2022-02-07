@@ -1,6 +1,6 @@
-package com.github.state.state;
+package com.github.state;
 
-import com.github.state.state.state4.GumMachine4;
+import com.github.state.state4.GumMachine4;
 
 public class StateMain {
 

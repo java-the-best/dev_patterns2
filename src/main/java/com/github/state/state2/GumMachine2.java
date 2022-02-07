@@ -1,10 +1,11 @@
-package com.github.state.state.state;
+package com.github.state.state2;
 
 enum GumMachineState {
   SOLD_OUT, NO_QUARTER, HAS_QUARTER
+  ,WINNER;
 }
 
-public class GumMachine {
+public class GumMachine2 {
   int count = 10;
   GumMachineState state = GumMachineState.NO_QUARTER;
   public void inwertQuarter() {
@@ -14,6 +15,9 @@ public class GumMachine {
       state = GumMachineState.HAS_QUARTER;
     } else if (state.equals(GumMachineState.SOLD_OUT)) {
       System.out.println("no gums");
+    }
+    else if (state.equals(GumMachineState.WINNER)) {
+      System.out.println("you are winner");
     }
   }
   public void turnCrank() {
@@ -27,6 +31,11 @@ public class GumMachine {
       }
     } else if (state.equals(GumMachineState.NO_QUARTER)) {
       System.out.println("yuo didn't insert quarter");
+    }
+    else if (state.equals(GumMachineState.WINNER)) {
+      System.out.println("give gum");
+      count--;
+      state = GumMachineState.NO_QUARTER;
     }
   }
 }

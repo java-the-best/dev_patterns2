@@ -1,6 +1,6 @@
 package com.github;
 
-import com.github.state.state.StateMain;
+import com.github.state.StateMain;
 
 public class Main {
 

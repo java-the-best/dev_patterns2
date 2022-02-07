@@ -1,4 +1,4 @@
-package com.github.state.state.state3;
+package com.github.state.state3;
 
 abstract class State {
   int count = 10;
